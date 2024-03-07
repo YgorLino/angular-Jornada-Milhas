@@ -1,0 +1,42 @@
+.card-depoimentos {
+    max-width: 320px;
+    background: #FEF7FF;
+    border: none;
+    .adjuster{
+        display: flex;
+        flex-direction: column;
+    }
+    .adjuster p{
+        margin-left: 10px;
+    }
+    .declaracao{
+        margin-left: 10px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .autor{
+        width: 500;
+        size: 16px;
+        line-height: 24px;
+    }
+    img{
+        width: 36px;
+        height: 36px;
+    }
+    button{
+        width: 100%;
+        margin: 0 16px 48px;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+            margin: 12px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            color: #1d1b20;
+            text-align: center;
+        }
+    }
+}

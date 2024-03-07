@@ -1,0 +1,14 @@
+h2{
+    margin-top: 25px;
+    font-family: Headline Large;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.card-wharpper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 16px;
+    margin-bottom: 40px;
+}
