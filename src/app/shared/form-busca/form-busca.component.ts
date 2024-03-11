@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./form-busca.component.scss']
 })
 export class FormBuscaComponent {
+campaignTwo: any;
+campaignOne: any;
   
 }
