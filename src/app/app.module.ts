@@ -24,6 +24,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
+import { ModalComponent } from './shared/modal/modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -37,7 +39,8 @@ import { MAT_DATE_LOCALE } from '@angular/material/core';
     HomeComponent,
     CardBuscaComponent,
     CardDepoimentosComponent,
-    FormBuscaComponent
+    FormBuscaComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
@@ -53,8 +56,7 @@ import { MAT_DATE_LOCALE } from '@angular/material/core';
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    
-    
+    MatDialogModule,
   ],
   providers: [
     { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' }

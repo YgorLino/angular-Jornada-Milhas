@@ -1,0 +1,65 @@
+<section class="modal">
+  <h2 mat-dialog-title>Viajante</h2>
+  <div mat-dialog-content>
+    <div class="selecao-idade">
+      <ul>
+        <li>Adultos</li>
+        <li>(Acima de 12 anos)</li>
+        <li>
+          <ng-template [ngIf]="quantidade > 0">
+            <button mat-mini-fab>
+              <img (click)="Subtrair()" src="/assets/icones/do_not_disturb_on.png" alt="opcao de diminuir">
+            </button>
+          </ng-template>
+          <span>{{quantidade}}</span>
+          <button  mat-mini-fab>
+            <img (click)="Adicionar()" src="/assets/icones/add_circle.png" alt="opcao de aumentar">
+          </button>
+        </li>
+        <li>Crianças</li>
+        <li>(Entre 2 e 11 anos)</li>
+        <li>
+          <ng-template [ngIf]="quantidade > 0">
+            <button mat-mini-fab>
+              <img (click)="Subtrair()" src="/assets/icones/do_not_disturb_on.png" alt="opcao de diminuir">
+            </button>
+          </ng-template>
+          <span>{{quantidade}}</span>
+          <button  mat-mini-fab>
+            <img (click)="Adicionar()" src="/assets/icones/add_circle.png" alt="opcao de aumentar">
+          </button>
+        </li>
+        <li>Bebês</li>
+        <li>(Até 2 anos)</li>
+        <li>
+          <ng-template [ngIf]="quantidade > 0">
+            <button mat-mini-fab>
+              <img (click)="Subtrair()" src="/assets/icones/do_not_disturb_on.png" alt="opcao de diminuir">
+            </button>
+          </ng-template>
+          <span>{{quantidade}}</span>
+          <button  mat-mini-fab>
+            <img (click)="Adicionar()" src="/assets/icones/add_circle.png" alt="opcao de aumentar">
+          </button>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="selecao-categoria">
+      <p>
+        Categoria
+      </p>
+      <mat-chip-listbox aria-label="opces">
+        <mat-chip-option>Executiva</mat-chip-option>
+        <mat-chip-option>Econômica</mat-chip-option>
+      </mat-chip-listbox>
+    </div>
+    <div class="modal-actions">
+      <mat-dialog-actions>
+        <button mat-button mat-dialog-close>Cancelar</button>
+        <button mat-button mat-dialog-close color="primary">Aplicar</button>
+      </mat-dialog-actions>
+    </div>
+  </div>
+  
+</section>
